@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nepal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px 40px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=2000&q=80");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: white;
+        }
+
+        h1 {
+            font-size: 100px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            margin: 0 0 20px 0;
+        }
+
+        .red { 
+            font-family: 'Anton', sans-serif;
+            color: red;
+        }
+
+        .blue { 
+            font-family: 'Anton', sans-serif;
+            color: blue;              
+        }
+
+        .half { 
+            font-family: 'Anton', sans-serif;
+            display: inline-block;
+            background: linear-gradient(
+                135deg,
+                blue 0%,
+                blue 50%,
+                red 50%,
+                red 100%                    
+            );
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        /* CSS Grid Container */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px 40px;
+            align-items: start;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .card {
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .title-card {
+            grid-column: 2;
+        }
+
+        .flag-card {
+            grid-column: 2;
+            height: auto;
+        }
+        .flag-card img {
+            width: auto;
+            max-width: 205px;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+            border-radius: 12px;
+        }
+
+        .card a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .card .title-link {
+            color: #FFFFFF;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        .card .title-link:hover {
+            text-decoration: underline;
+        }
+
+        .card .subtitle {
+            color: #FFD700;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 4px;
+        }
+
+        .credit {
+            grid-column: 1 / -1;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+  
+        <div class="card pic1">
+            <img src="https://national-parks.org/wp-content/uploads/2025/10/Sagarmatha-National-Park.jpg" alt="Mount Everest">
+            <a href="everest.html" class="title-link">Mt. Everest 8848.86m</a>
+            <span class="subtitle">The highest peak of the world.</span>
+        </div>
+
+        <div class="card title-card">
+            <h1><span class="blue">NE</span><span class="half">P</span><span class="red">AL</span></h1>
+        </div>
+
+
+        <div class="card pic2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkb-Nj-qNuP-nJNJ4wouvE45ZGte0q0_lvafzMttOkKA&s=10" alt="Lumbini">
+            <a href="Lumbini.html" class="title-link">Lumbini:</a>
+            <span class="subtitle">The birth place of Gautam Buddha.</span>
+        </div>
+
+        <div class="card tilicho">
+            <img src="https://www.nepaltrekhub.com/wp-content/uploads/2020/12/tilicho-lake-trek.jpg" alt="Tilicho Lake">
+            <a href="Tilicho.html" class="title-link">Tilicho Lake</a>
+            <span class="subtitle">One The Beautiful Lake That lies in Nepal</span>
+        </div>
+
+        <div class="card flag-card">
+            <img src="https://i.pinimg.com/474x/49/23/46/49234691d9b861787ecac0b19f1d4313.jpg?nii=t" alt="National Flag">
+            <a href="flag.html" class="title-link">National Flag</a>
+            <span class="subtitle">The only Triangular Flag in The World.</span>
+        </div>
+
+        <div class="card rhino">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Great-Indian-one-horned-rhinoceros-at-Kaziranga-national-park-in-Assam-India.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Rhino">
+            <a href="rhino.html" class="title-link">One Horned Rhino</a>
+            <span class="subtitle">The Rhinos that are found only on Nepal.</span>
+        </div>
+
+        <div class="credit">
+            By Salon Poudel B K
+        </div>
+    </div>
+
+</body>
+</html>

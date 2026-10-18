@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Horned Rhino</title>
+
+    <style>
+        /* Base Setup */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            color: #ffffff;
+            
+            /* Background Configuration */
+            background-image: url("https://www.remotelands.com/travelogues/app/uploads/2021/12/Chitwan-1-1920x960.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Navigation Bar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(24, 60, 43, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            color: #ffe0b2;
+            background-color: rgba(255, 224, 178, 0.15);
+            border: 1px solid rgba(255, 224, 178, 0.3);
+            padding: 0.5rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(255, 224, 178, 0.3);
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        
+        .content-container {
+            margin-top: auto;
+            margin-bottom: 5rem;
+            margin-left: 0vh;
+            margin-right: auto;
+            max-width: 380px;
+            text-align: left;
+            padding: 2.5rem;
+            
+            /* Dark Forest Glass Backdrop */
+            background: rgba(14, 28, 20, 0.55);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 224, 178, 0.2);
+            border-radius: 6px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+        }
+
+        .describe {
+            color: #ffe0b2;
+            font-size: clamp(2.5rem, 6vw, 4.2rem);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.01em;
+            margin-bottom: 1.25rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .description-text {
+            font-size: clamp(1.1rem, 2vw, 1.35rem);
+            line-height: 1.6;
+            color: #f1f5f9;
+            font-weight: 400;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .content-container {
+                margin: auto 1.5rem 2rem 1.5rem;
+                padding: 1.75rem;
+                max-width: none;
+            }
+
+            .navbar {
+                padding: 0.75rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="Nepal-ICS3U.html" class="nav-button">Home</a>
+    </header>
+
+    <main class="content-container">
+        <h1 class="describe">One-Horned Rhino</h1>
+        <p class="description-text">
+            Chitwan’s rhinos are a magnificent symbol of Nepal’s wild beauty and strength. 🦏🌿 Protecting them and their lush habitat ensures these extraordinary creatures are preserved for generations to come.
+        </p>
+    </main>
+</body>
+</html>
