@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Website</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f0f4ff;
+            padding: 80px 20px;
+        }
+        h1 {
+            color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website!</h1>
+    <p>This is my first free website on GitHub Pages.</p>
+</body>
+</html>
