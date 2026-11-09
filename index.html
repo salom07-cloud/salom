@@ -202,7 +202,20 @@ input:focus {
 </div>
 
 <script>
+document.getElementById("loginForm")
+.addEventListener("submit", function(event) {
+    event.preventDefault();
 
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    console.log("Email:", email);
+    console.log("Password entered:", password.length > 0
+        ? "Yes" : "No");
+
+    console.log("Email valid:",
+        document.getElementById("email").checkValidity());
+});
 // Show and hide password
 function togglePassword() {
     const password = document.getElementById("password");
